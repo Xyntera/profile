@@ -1,0 +1,82 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #0A192F;
+    color: #FFFFFF;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #020C1B;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+    color: #64FFDA;
+}
+
+section {
+    margin: 20px;
+    border-radius: 10px;
+    padding: 30px;
+    background-color: #0D1B2A;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #BBDEFB;
+    border-bottom: 3px solid #64FFDA;
+    padding-bottom: 15px;
+    font-size: 28px;
+    text-transform: uppercase;
+}
+
+.personal-details {
+    display: flex;
+    align-items: center;
+}
+
+.profile-pic {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin-right: 30px;
+    border: 3px solid #64FFDA;
+}
+
+.details p {
+    margin: 15px 0;
+    font-size: 18px;
+}
+
+.skills-list, .languages-list {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.skills-list li, .languages-list li {
+    margin: 8px 0;
+    font-size: 16px;
+}
+
+.skills-list li:before, .languages-list li:before {
+    content: "\f6de"; /* FontAwesome language icon */
+    font-family: "Font Awesome 5 Free";
+    margin-right: 10px;
+    color: #64FFDA;
+}
+
+.certification-details p {
+    margin: 15px 0;
+    font-size: 18px;
+}
+
+.certification-details p i {
+    margin-right: 10px;
+    font-size: 24px;
+    color: #64FFDA;
+}
+
+/* Add more styles as needed */
