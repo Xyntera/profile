@@ -1,3 +1,4 @@
+/* Global styles */
 body {
     font-family: 'Arial', sans-serif;
     background-color: #0A192F;
@@ -33,8 +34,10 @@ h2 {
     text-transform: uppercase;
 }
 
+/* Personal Information Section */
 .personal-details {
     display: flex;
+    flex-direction: column;
     align-items: center;
 }
 
@@ -42,22 +45,23 @@ h2 {
     width: 120px;
     height: 120px;
     border-radius: 50%;
-    margin-right: 30px;
+    margin-bottom: 20px;
     border: 3px solid #64FFDA;
 }
 
 .details p {
-    margin: 15px 0;
-    font-size: 18px;
+    margin: 10px 0;
+    font-size: 16px;
 }
 
+/* Skills Section */
 .skills-list, .languages-list {
     list-style-type: none;
     padding-left: 0;
 }
 
 .skills-list li, .languages-list li {
-    margin: 8px 0;
+    margin: 10px 0;
     font-size: 16px;
 }
 
@@ -68,15 +72,35 @@ h2 {
     color: #64FFDA;
 }
 
-.certification-details p {
-    margin: 15px 0;
-    font-size: 18px;
-}
+/* Media Queries for responsiveness */
+@media (max-width: 768px) {
+    header {
+        padding: 15px;
+    }
 
-.certification-details p i {
-    margin-right: 10px;
-    font-size: 24px;
-    color: #64FFDA;
-}
+    h1 {
+        font-size: 24px;
+    }
 
-/* Add more styles as needed */
+    section {
+        margin: 15px;
+        padding: 20px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    .profile-pic {
+        width: 100px;
+        height: 100px;
+    }
+
+    .details p {
+        font-size: 14px;
+    }
+
+    .skills-list li, .languages-list li {
+        font-size: 14px;
+    }
+}
